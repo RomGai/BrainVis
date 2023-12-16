@@ -10,7 +10,6 @@ folder7 = "data/image"
 folder8 = "data/image_text"
 folder9 = "data/image_text_CLIP"
 folder10 = "data/imagelabel_text_CLIP"
-folder11 = "pretrained_model"
 
 os.makedirs(folder1)
 os.makedirs(folder2)
@@ -22,7 +21,3 @@ os.makedirs(folder7)
 os.makedirs(folder8)
 os.makedirs(folder9)
 os.makedirs(folder10)
-os.makedirs(folder11)
-
-
-
