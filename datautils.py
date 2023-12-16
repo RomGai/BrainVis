@@ -11,12 +11,12 @@ import pandas as pd
 parser = argparse.ArgumentParser(description="Template")
 ### BLOCK DESIGN ###
 #Splits
-#parser.add_argument('-sp', '--splits-path', default=r"data\EEG\block_splits_by_image_all.pth", help="splits path") #subjects('all' ←---→ 'single')
-parser.add_argument('-sp', '--splits-path', default=r"data\EEG\block_splits_by_image_single.pth", help="splits path") #subjects('all' ←---→ 'single')
+parser.add_argument('-sp', '--splits-path', default=r"data\EEG\block_splits_by_image_all.pth", help="splits path") #subjects('all' ←---→ 'single')
+#parser.add_argument('-sp', '--splits-path', default=r"data\EEG\block_splits_by_image_single.pth", help="splits path") #subjects('all' ←---→ 'single')
 ### BLOCK DESIGN ###
 parser.add_argument('-sn', '--split-num', default=0, type=int, help="split number") #leave this always to zero.
 #Subject selecting
-parser.add_argument('-sub','--subject', default=1 , type=int, help="choose a subject from 1 to 6, default is 0 (all subjects)")
+parser.add_argument('-sub','--subject', default=0 , type=int, help="choose a subject from 1 to 6, default is 0 (all subjects)")
 #Time options: select from 20 to 460 samples from EEG data
 parser.add_argument('-tl', '--time_low', default=20, type=float, help="lowest time value")
 parser.add_argument('-th', '--time_high', default=460,  type=float, help="highest time value")
