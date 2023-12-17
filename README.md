@@ -8,6 +8,12 @@
 
 ##### Environment
 
+```python
+import
+numpy
+```
+
+
 ```pip install ftfy
 
 pip install omegaconf<br>pip install einops<br>pip install torchmetrics<br>pip install pytorch-lightning<br>pip install transformers<br>pip install kornia<br>pip install diffusers</p>
