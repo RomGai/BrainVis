@@ -6,18 +6,17 @@
 
 # Preparation
 
-##### Environment
+**Environment**
 
 ```
-import
-numpy
-```
-
-
-```pip install ftfy
-
-pip install omegaconf<br>pip install einops<br>pip install torchmetrics<br>pip install pytorch-lightning<br>pip install transformers<br>pip install kornia<br>pip install diffusers</p>
-
+pip install ftfy
+pip install omegaconf
+pip install einops
+pip install torchmetrics
+pip install pytorch-lightning
+pip install transformers
+pip install kornia
+pip install diffusers
 ```
 
 
