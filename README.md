@@ -21,6 +21,8 @@ pip install kornia
 pip install diffusers
 ```
 
+We have done all testing and development using A100 GPU.
+
 **Create paths**
 
 ```
