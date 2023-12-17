@@ -8,9 +8,9 @@
 
 ##### Environment
 
-'pip install ftfy'
+`pip install ftfy`
 
-'pip install omegaconf'
+`pip install omegaconf`
 
 'pip install einops'
 
