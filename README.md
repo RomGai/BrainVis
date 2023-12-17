@@ -8,7 +8,7 @@
 
 **Environment**
 
-We recommend installing 64-bit Python 3.8 and [PyTorch 1.12.0](https://pytorch.org/get-started/locally/). On a CUDA GPU machine, the following will do the trick:
+We recommend installing 64-bit Python 3.8 and [PyTorch 1.12.0](https://pytorch.org/get-started/locally/). Then run the following:
 
 ```
 pip install ftfy
