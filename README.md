@@ -48,9 +48,23 @@ python imageLabeltoCLIP.py
 3. Comment out **"trainer.pretrain()"** on **line 59** of `main.py`, and uncomment **"trainer.finetune()"** on **line 61**. Run `main.py` to fine-tune the time encoder.
 4. Modify **"_all"** to **"_single"** in **line 14** of `datautils.py`, and change **"default=0"** to any number from 1 to 6 in **line 19** to use a different single subject. Comment out **line 61** in `main.py` and uncomment **"trainer.finetune_timefreq()"** on line 64. Run `main.py` to integrate the time and frequency models.
 5. Comment out **line 64** of `main.py`, and uncomment **"trainer.finetune_CLIP()"** on **line 65**. Run `main.py` to conduct cross-modal EEG alignment.
-6. Modify the **"train_mode"** to **"False"** on **line 56** of `main.py` and run it to store the alignment results for reconstruction.
+6. Modify the **"train_mode"** to **"False"** on **line 56** of `main.py` and run it to save the alignment results for reconstruction.
 
 # Image Reconstruction
 
-`python cascade_diffusion.py`
+```
+python cascade_diffusion.py
+```
+
+Results will be saved in the path "/picture-gene".
+
+# Acknowledgement
+
+We thank these authors of [Stable Diffusion](https://github.com/CompVis/stable-diffusion), [EEG Visual Classification](https://github.com/perceivelab/eeg_visual_classification), [TimeMAE](https://github.com/Mingyue-Cheng/TimeMAE), [Mind-Vis](https://github.com/zjc062/mind-vis) and [CLIP](https://github.com/openai/CLIP) for making thier code publicly available. and the [PeRCeiVe Lab](https://www.perceivelab.com/) for making their raw and pre-processed data public.
+
+# Citation
+
+```
+-----cite-----
+```
 
