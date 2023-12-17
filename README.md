@@ -32,7 +32,7 @@ python create_path.py
 1. [CLIP](https://github.com/openai/CLIP). Place the "clip" folder in this project.
 2. Pre-trained stable diffusion model [v1-5-pruned-emaonly](https://huggingface.co/runwayml/stable-diffusion-v1-5). Place the "v1-5-pruned-emaonly.ckpt" to path "/pretrained_model".
 3. [EEG-Image pairs dataset](https://tinyurl.com/eeg-visual-classification). Place "block_splits_by_image_all.pth", "block_splits_by_image_single.pth" and "eeg_5_95_std.pth" to path "/data/EEG".
-4. [Copy](https://drive.google.com/file/d/1k3Psdqhl0Saiol4Yauy6eCQK6_-Em05R/view?usp=drive_link) of required ImageNet subset. Unzip it to path "/data/image".
+4. A [copy](https://drive.google.com/file/d/1k3Psdqhl0Saiol4Yauy6eCQK6_-Em05R/view?usp=drive_link) of required ImageNet subset. Unzip it to path "/data/image".
 
 **Obtain the training data required for the alignment process**
 
