@@ -22,6 +22,6 @@ pip install transformers
 
 pip install kornia
 
-pip install diffusers'
+pip install diffusers`
 
 首先运行
