@@ -35,7 +35,7 @@ python create_path.py
    
 3. [EEG-Image pairs dataset](https://tinyurl.com/eeg-visual-classification). Place "block_splits_by_image_all.pth", "block_splits_by_image_single.pth" and "eeg_5_95_std.pth" in the path "/data/EEG".
    
-4. A subset of ImageNet that is required. Unzip it in the path "/data/image"
+4. A copy of required ImageNet subset. Unzip it in the path "/data/image".
 
 **The training data required for the alignment process**
 
@@ -44,3 +44,4 @@ python imageBLIPtoCLIP.py
 python imageLabeltoCLIP.py
 ```
 
+# Train the model
