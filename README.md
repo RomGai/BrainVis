@@ -8,13 +8,6 @@
 
 ##### Environment
 
-`pip install ftfy  
-pip install omegaconf  
-pip install einops  
-pip install torchmetrics  
-pip install pytorch-lightning  
-pip install transformers  
-pip install kornia  
-pip install diffusers`
+`pip install ftfy<br>pip install omegaconf<br>pip install einops<br>pip install torchmetrics<br>pip install pytorch-lightning<br>pip install transformers<br>pip install kornia<br>pip install diffusers`
 
 首先运行
