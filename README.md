@@ -8,7 +8,7 @@
 
 **Environment**
 
-We recommend installing 64-bit Python 3.8 and PyTorch 1.12.0. See https://pytorch.org for PyTorch install instructions. On a CUDA GPU machine, the following will do the trick:
+We recommend installing 64-bit Python 3.8 and [PyTorch 1.12.0](https://pytorch.org/get-started/locally/). On a CUDA GPU machine, the following will do the trick:
 
 ```
 pip install ftfy
@@ -30,9 +30,9 @@ python create_path.py
 **Download required files**
 
 1. [CLIP](https://github.com/openai/CLIP). Place the "clip" folder in this project.
-2. Pre-trained stable diffusion model [v1-5-pruned-emaonly](https://huggingface.co/runwayml/stable-diffusion-v1-5). Place the "v1-5-pruned-emaonly.ckpt" in the path "/pretrained_model".
-3. [EEG-Image pairs dataset](https://tinyurl.com/eeg-visual-classification). Place "block_splits_by_image_all.pth", "block_splits_by_image_single.pth" and "eeg_5_95_std.pth" in the path "/data/EEG".
-4. [Copy](https://drive.google.com/file/d/1k3Psdqhl0Saiol4Yauy6eCQK6_-Em05R/view?usp=drive_link) of required ImageNet subset. Unzip it in the path "/data/image".
+2. Pre-trained stable diffusion model [v1-5-pruned-emaonly](https://huggingface.co/runwayml/stable-diffusion-v1-5). Place the "v1-5-pruned-emaonly.ckpt" to path "/pretrained_model".
+3. [EEG-Image pairs dataset](https://tinyurl.com/eeg-visual-classification). Place "block_splits_by_image_all.pth", "block_splits_by_image_single.pth" and "eeg_5_95_std.pth" to path "/data/EEG".
+4. [Copy](https://drive.google.com/file/d/1k3Psdqhl0Saiol4Yauy6eCQK6_-Em05R/view?usp=drive_link) of required ImageNet subset. Unzip it to path "/data/image".
 
 **Obtain the training data required for the alignment process**
 
@@ -58,9 +58,15 @@ python cascade_diffusion.py
 
 Results will be saved in the path "/picture-gene".
 
-# Acknowledgement
+# Broader Information
 
-We thank these authors of [Stable Diffusion](https://github.com/CompVis/stable-diffusion), [EEG Visual Classification](https://github.com/perceivelab/eeg_visual_classification), [TimeMAE](https://github.com/Mingyue-Cheng/TimeMAE), [Mind-Vis](https://github.com/zjc062/mind-vis) and [CLIP](https://github.com/openai/CLIP) for making thier code publicly available. and the [PeRCeiVe Lab](https://www.perceivelab.com/) for making their raw and pre-processed data public.
+BrainVis builds upon several previous works:
+
+[High-resolution image synthesis with latent diffusion models (CVPR 2022)](https://openaccess.thecvf.com/content/CVPR2022/papers/Rombach_High-Resolution_Image_Synthesis_With_Latent_Diffusion_Models_CVPR_2022_paper.pdf)
+[Learning Transferable Visual Models From Natural Language Supervision (ICML 2021)](https://proceedings.mlr.press/v139/radford21a/radford21a.pdf)
+[Seeing beyond the brain: Masked modeling conditioned diffusion model for human vision decoding (CVPR 2023)](https://openaccess.thecvf.com/content/CVPR2023/papers/Chen_Seeing_Beyond_the_Brain_Conditional_Diffusion_Model_With_Sparse_Masked_CVPR_2023_paper.pdf)
+[Deep learning human mind for automated visual classification (CVPR 2017)](https://openaccess.thecvf.com/content_cvpr_2017/papers/Spampinato_Deep_Learning_Human_CVPR_2017_paper.pdf)
+[TimeMAE: Self-Supervised Representations of Time Series with Decoupled Masked Autoencoders](https://arxiv.org/pdf/2303.00320.pdf)
 
 # Citation
 
