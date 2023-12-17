@@ -8,7 +8,7 @@
 
 ##### Environment
 
-`pip install ftfy< br >
+`pip install ftfy<br>
 pip install omegaconf
 pip install einops
 pip install torchmetrics
