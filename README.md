@@ -8,7 +8,7 @@
 
 ##### Environment
 
-```python
+```
 import
 numpy
 ```
