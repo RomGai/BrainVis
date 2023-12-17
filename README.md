@@ -62,11 +62,11 @@ Results will be saved in the path "/picture-gene".
 
 BrainVis builds upon several previous works:
 
-[High-resolution image synthesis with latent diffusion models (CVPR 2022)](https://openaccess.thecvf.com/content/CVPR2022/papers/Rombach_High-Resolution_Image_Synthesis_With_Latent_Diffusion_Models_CVPR_2022_paper.pdf)
-[Learning Transferable Visual Models From Natural Language Supervision (ICML 2021)](https://proceedings.mlr.press/v139/radford21a/radford21a.pdf)
-[Seeing beyond the brain: Masked modeling conditioned diffusion model for human vision decoding (CVPR 2023)](https://openaccess.thecvf.com/content/CVPR2023/papers/Chen_Seeing_Beyond_the_Brain_Conditional_Diffusion_Model_With_Sparse_Masked_CVPR_2023_paper.pdf)
-[Deep learning human mind for automated visual classification (CVPR 2017)](https://openaccess.thecvf.com/content_cvpr_2017/papers/Spampinato_Deep_Learning_Human_CVPR_2017_paper.pdf)
-[TimeMAE: Self-Supervised Representations of Time Series with Decoupled Masked Autoencoders](https://arxiv.org/pdf/2303.00320.pdf)
+1. [High-resolution image synthesis with latent diffusion models (CVPR 2022)](https://openaccess.thecvf.com/content/CVPR2022/papers/Rombach_High-Resolution_Image_Synthesis_With_Latent_Diffusion_Models_CVPR_2022_paper.pdf)
+2. [Learning Transferable Visual Models From Natural Language Supervision (ICML 2021)](https://proceedings.mlr.press/v139/radford21a/radford21a.pdf)
+3. [Seeing beyond the brain: Masked modeling conditioned diffusion model for human vision decoding (CVPR 2023)](https://openaccess.thecvf.com/content/CVPR2023/papers/Chen_Seeing_Beyond_the_Brain_Conditional_Diffusion_Model_With_Sparse_Masked_CVPR_2023_paper.pdf)
+4. [Deep learning human mind for automated visual classification (CVPR 2017)](https://openaccess.thecvf.com/content_cvpr_2017/papers/Spampinato_Deep_Learning_Human_CVPR_2017_paper.pdf)
+5. [TimeMAE: Self-Supervised Representations of Time Series with Decoupled Masked Autoencoders](https://arxiv.org/pdf/2303.00320.pdf)
 
 # Citation
 
