@@ -6,6 +6,8 @@ Abstract: *Analyzing and reconstructing visual stimuli from brain signals effect
 
 ![Results](/figures/results.jpg)
 
+We provide more results [here](https://drive.google.com/file/d/17JFYU-hM1TR1G2ZzR2uZCPx-ChxkDc3z/view?usp=drive_link).
+
 # Preparation
 
 **Environment**
