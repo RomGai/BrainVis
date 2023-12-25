@@ -77,6 +77,10 @@ BrainVis builds upon several previous works:
 # Citation
 
 ```
------cite-----
+@article{fu2023brainvis,
+    title={BrianVis: Exploring the Bridge between Brain and Visual Signals via Image Reconstruction},
+    author={Honghao Fu and Zhiqi Shen and Jing Jih Chin and Hao Wang},
+    journal={arXiv preprint arXiv:2312.14871},
+    year={2023}
+}
 ```
-
