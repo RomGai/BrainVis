@@ -184,7 +184,7 @@ freq_model = FreqEncoder(**freq_model_options)
 timefreq_model = TimeFreqEncoder(time_model, freq_model, args)
 timefreq_model=timefreq_model.to("cuda")
 
-time_size=128
+time_size=1024
 freq_size=128
 clip_size=int(77*768)
 
