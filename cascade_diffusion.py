@@ -122,6 +122,7 @@ global_pool=True
 use_time_cond=False
 clip_tune=False
 cls_tune=False
+ddim_steps=50
 
 def normalize(img):
     if img.shape[-1] == 3:
@@ -274,7 +275,7 @@ for inputs, gt_image, img_name, prompt in test_loader:
             print(np.shape(c))
             print(f"rendering {num_samples} examples in {ddim_steps} steps.")
 
-            samples_ddim, _ = sampler.sample(S=5,
+            samples_ddim, _ = sampler.sample(S=ddim_steps,
                                              conditioning=c,
                                              batch_size=num_samples,
                                              shape=shape,
