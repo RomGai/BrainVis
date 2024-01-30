@@ -214,6 +214,7 @@ model.ch_mult = config.model.params.first_stage_config.params.ddconfig.ch_mult
 model.clip_tune = clip_tune
 model.cls_tune = cls_tune
 model = model.to(device)
+model.eval()
 sampler = PLMSSampler(model)
 ldm_config = config
 shape = (ldm_config.model.params.channels, ldm_config.model.params.image_size, ldm_config.model.params.image_size)
@@ -235,6 +236,7 @@ for idx in range(0,len(labels)):
 print("errclassnum:"+str(errnum))
 
 model2 = StableDiffusionImg2ImgPipeline.from_single_file("pretrained_model/v1-5-pruned-emaonly.ckpt").to(device)
+model2.eval()
 
 
 num_samples=4
