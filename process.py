@@ -72,7 +72,7 @@ class Trainer():
             NDCG_sum = 0
             for idx, batch in enumerate(tqdm_dataloader):
                 batch = [x.to(self.device) for x in batch]
-                self.optimizer.zero_grad()  # 梯度清零
+                self.optimizer.zero_grad() 
                 [rep_mask, rep_mask_prediction], [token_prediction_prob, tokens] = self.model.pretrain_forward(batch[0])
                 align_loss = align.compute(rep_mask, rep_mask_prediction)
                 loss_mse += align_loss.item()
