@@ -18,6 +18,12 @@ parser.add_argument('--pretrained_net', default='lstm__subject0_epoch_900.pth', 
 # Parse arguments
 opt = parser.parse_args()
 
+def top_k_accuracy_score(y_true, y_pred, k=5):
+    top_k_preds = torch.topk(y_pred, k, dim=1)[1]
+    correctness = top_k_preds.eq(y_true.view(-1, 1).expand_as(top_k_preds))
+    top_k_accuracy = correctness.sum().float() / y_true.size(0)
+    return top_k_accuracy.item()  # 返回一个Python标量
+
 def l1_regularization(model, lambda_):
     l1_norm = 0
     for param in model.parameters():
@@ -226,6 +232,8 @@ class Trainer():
         #if len(batch) == 2:
         seqs, label,clip,clip_moreinf = batch
         lastrep, rep,scores = model(seqs)
+        top3acc=top_k_accuracy_score(y_true=label,y_pred=scores,k=3)
+        top5acc=top_k_accuracy_score(y_true=label,y_pred=scores,k=5)
         #else:
         #    seqs1, seqs2, label = batch
         #    lastrep, rep, scores = self.model((seqs1, seqs2))
@@ -233,7 +241,7 @@ class Trainer():
         #print(np.shape(scores))
         test_loss = self.test_cr(scores, label.view(-1).long())
         pred = pred.view(-1).tolist()
-        return pred, label.tolist(), test_loss
+        return pred, label.tolist(), test_loss ,top3acc ,top5acc
 
     def _confusion_mat(self, label, pred):
         mat = np.zeros((self.args.num_class, self.args.num_class))
@@ -464,6 +472,8 @@ class Trainer():
             pred = []
             label = []
             test_loss = 0
+            acc3=0
+            acc5=0
 
             for idxte, batch in enumerate(test_tqdm_dataloader):
                 self.timefreq_model.eval()
@@ -474,9 +484,11 @@ class Trainer():
                     pred += pred_b
                     label += label_b
                 else:
-                    pred_b, label_b, test_loss_b = ret
+                    pred_b, label_b, test_loss_b,acc3_b,acc5_b = ret
                     pred += pred_b
                     label += label_b
+                    acc3+=acc3_b
+                    acc5+=acc5_b
                     test_loss += test_loss_b.cpu().item()
             confusion_mat = self._confusion_mat(label, pred)
             self.print_process(confusion_mat)
@@ -491,7 +503,10 @@ class Trainer():
             metrics['acc'] = accuracy_score(y_true=label, y_pred=pred)
             metrics['test_loss'] = test_loss / (idxte + 1)
 
-            print('timefreq_finetune epoch{0}, trloss{1}, teloss{2},teacc{3}'.format(epoch + 1, trloss, metrics['test_loss'],metrics['acc']))
+            te_top3acc = acc3 / (idxte + 1)
+            te_top5acc = acc5 / (idxte + 1)
+
+            print('timefreq_finetune epoch{0}, trloss{1}, teloss{2},teacc{3},te_top3acc{4},te_top3acc{5}'.format(epoch + 1, trloss, metrics['test_loss'],metrics['acc'],te_top3acc,te_top5acc))
 
             if (epoch + 1) % 5 == 0:
                 torch.save(self.timefreq_model.state_dict(),
