@@ -489,7 +489,7 @@ class Trainer():
                 metrics['f1'] = f1_score(y_true=label, y_pred=pred, average='macro')
                 metrics['micro_f1'] = f1_score(y_true=label, y_pred=pred, average='micro')
             metrics['acc'] = accuracy_score(y_true=label, y_pred=pred)
-            metrics['test_loss'] = test_loss / (idx + 1)
+            metrics['test_loss'] = test_loss / (idxte + 1)
 
             print('timefreq_finetune epoch{0}, trloss{1}, teloss{2},teacc{3}'.format(epoch + 1, trloss, metrics['test_loss'],metrics['acc']))
 
