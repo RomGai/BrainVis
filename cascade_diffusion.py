@@ -307,7 +307,7 @@ with torch.no_grad():
                     img_t = Image.fromarray(rearrange(img_t, 'c h w -> h w c'))
                     images_list.append(img_t)
 
-                generated_image = model2(prompt_list, images_list, strength=0.75, guidance_scale=7.5, num_inference_steps=100).images
+                generated_image = model2(prompt_list, images_list, strength=0.85, guidance_scale=7.5, num_inference_steps=100).images
 
                 for j in range(0, num_samples):
                     generated_image[j].save("picture-gene/batch_" + str(batch_pos) + "_test_" + str(index) + "_" + img_name[
