@@ -235,8 +235,6 @@ for idx in range(0,len(labels)):
 print("errclassnum:"+str(errnum))
 
 model2 = StableDiffusionImg2ImgPipeline.from_single_file("pretrained_model/v1-5-pruned-emaonly.ckpt").to(device)
-model2.eval()
-
 
 num_samples=4
 gt_img_num=1
