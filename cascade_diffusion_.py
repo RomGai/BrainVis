@@ -14,8 +14,6 @@ import argparse
 from diffusers import StableDiffusionImg2ImgPipeline
 from PIL import Image
 
-print("11111")
-
 propmt_dict = {'n02106662': 'german shepherd dog',
 'n02124075': 'cat ',
 'n02281787': 'lycaenid butterfly',
@@ -119,7 +117,6 @@ test_pred_file=datapath+'test_pred.pth'
 output_path="picture"
 
 logger=None
-ddim_steps=40
 global_pool=True
 use_time_cond=False
 clip_tune=False
