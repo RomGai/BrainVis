@@ -414,6 +414,10 @@ class Trainer():
                 torch.save(self.alignmodel.state_dict(),
                            self.save_path + '/clipfinetune_model_epoch' + str(epoch + 1) + '.pkl')
 
+            if tecosine > eval_cosine:
+                eval_cosine = tecosine
+                torch.save(self.alignmodel.state_dict(), self.save_path + '/clipfinetune_model.pkl')
+
     def finetune_timefreq(self):
         time_state_dict = torch.load(self.save_path + '/finetune_model_epoch80.pkl',
                                 map_location=self.device)
