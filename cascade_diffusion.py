@@ -189,7 +189,7 @@ freq_size=128
 clip_size=int(77*768)
 
 model_eegtoclip=AlignNet(time_size,freq_size,clip_size,timefreq_model)
-eegtoclip_state_dict = torch.load('exp/epilepsy/test/exp/epilepsy/test/clipfinetune_model_epoch200.pkl', map_location="cuda")#device)
+eegtoclip_state_dict = torch.load('exp/epilepsy/test/exp/epilepsy/test/clipfinetune_model.pkl', map_location="cuda")#device)
 model_eegtoclip.load_state_dict(eegtoclip_state_dict)
 model_eegtoclip.to("cuda")
 model_eegtoclip.eval()
