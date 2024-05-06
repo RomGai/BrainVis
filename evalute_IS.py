@@ -84,14 +84,6 @@ for gt_name in gt_images_name:
     gene_image_name.append(name3)
     gene_image_name.append(name4)
 
-    gene_image_path0='picture-gene' + gene_image_name[0]
-    try:
-        with Image.open(gene_image_path0).convert('RGB') as ge_image:
-            tmp_img=ge_image
-    except:
-        print(f"Failed to read image: {gene_image_path0}")
-        continue
-
     gt = real_image
 
     for i in range(0,num_samples):
