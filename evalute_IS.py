@@ -88,7 +88,7 @@ for gt_name in gt_images_name:
 
     for i in range(0,num_samples):
         try:
-            with Image.open('subj6pic/stage2/' + gene_image_name[i]).convert('RGB') as generat_image:
+            with Image.open('picture-gene' + gene_image_name[i]).convert('RGB') as generat_image:
                 generated_image = generat_image
         except:
             print(f"Failed to read image: {gene_image_name[i]}")
