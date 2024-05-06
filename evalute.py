@@ -84,14 +84,6 @@ for gt_name in gt_images_name:
     gene_image_name.append(name3)
     gene_image_name.append(name4)
 
-    gene_image_path0='subj6pic/stage2/' + gene_image_name[0]
-    try:
-        with Image.open(gene_image_path0).convert('RGB') as ge_image:
-            tmp_img=ge_image
-    except:
-        print(f"Failed to read image: {gene_image_path0}")
-        continue
-
     gt = preprocess(real_image).unsqueeze(0).to("cuda")
     gt_class_id = model(gt).squeeze(0).softmax(0).argmax().item()
 
