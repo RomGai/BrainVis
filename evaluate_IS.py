@@ -103,7 +103,6 @@ def readDir(dirPath=args.input_image_dir):
     else:
         return 'Error, not a dir'
 
-
 if __name__ == '__main__':
     IS = inception_score()
     print('The Inception Score is %.4f' % IS)
