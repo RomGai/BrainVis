@@ -15,14 +15,15 @@ We provide more results [here](https://drive.google.com/file/d/17JFYU-hM1TR1G2Zz
 We recommend installing 64-bit Python 3.8 and [PyTorch 1.12.0](https://pytorch.org/get-started/locally/). On a CUDA GPU machine, the following will do the trick:
 
 ```
-pip install ftfy
-pip install omegaconf
-pip install einops
-pip install torchmetrics
-pip install pytorch-lightning
-pip install transformers
-pip install kornia
-pip install diffusers
+pip install numpy==1.26.0
+pip install ftfy==6.2.0
+pip install omegaconf==2.3.0
+pip install einops==0.8.0
+pip install torchmetrics==1.4.0.post0
+pip install pytorch-lightning==2.3.3
+pip install transformers==4.42.4
+pip install kornia==0.7.3
+pip install diffusers==0.29.2
 ```
 
 We have done all testing and development using A100 GPU.
