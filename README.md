@@ -1,4 +1,4 @@
-# BrainVis: Exploring the Bridge between Brain and Visual Signals via Image Reconstruction [[Link to paper](https://arxiv.org/abs/2312.14871)]
+# [ICASSP 2025] BrainVis: Exploring the Bridge between Brain and Visual Signals via Image Reconstruction [[Link to paper](https://arxiv.org/abs/2312.14871)]
 
 ![Framework](/figures/framework.jpg)
 
