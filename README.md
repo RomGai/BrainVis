@@ -12,7 +12,7 @@ We provide more results [here](https://drive.google.com/file/d/17JFYU-hM1TR1G2Zz
 
 **Environment**
 
-We recommend installing 64-bit Python 3.8 and [PyTorch 1.12.0](https://pytorch.org/get-started/locally/). On a CUDA GPU machine, the following will do the trick:
+We recommend installing 64-bit Python 3.10.12 and [PyTorch 2.5.1](https://pytorch.org/get-started/locally/). On a CUDA GPU machine, the following will do the trick:
 
 ```
 pip install numpy==1.26.0
