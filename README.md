@@ -77,6 +77,8 @@ BrainVis builds upon several previous works:
 
 # Citation
 
+If you find BrainVis useful for your research, we would greatly appreciate it if you could star it on GitHub and cite using this BibTeX.
+
 ```
 @article{fu2023brainvis,
     title={BrianVis: Exploring the Bridge between Brain and Visual Signals via Image Reconstruction},
