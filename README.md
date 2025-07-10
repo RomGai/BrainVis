@@ -65,6 +65,10 @@ python cascade_diffusion.py
 
 Results will be saved in the path "/picture-gene".
 
+# Checkpoints
+
+Please leave your email address in the issue (I will respond as soon as possible), or contact me directly via email at hfu006@e.ntu.edu.sg (some emails might be missed). I will send you the checkpoint along with the usage instructions.
+
 # Broader Information
 
 BrainVis builds upon several previous works:
