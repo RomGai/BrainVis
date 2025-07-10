@@ -84,10 +84,12 @@ BrainVis builds upon several previous works:
 If you find BrainVis useful for your research, we would greatly appreciate it if you could star it on GitHub and cite using this BibTeX.
 
 ```
-@article{fu2023brainvis,
-    title={BrianVis: Exploring the Bridge between Brain and Visual Signals via Image Reconstruction},
-    author={Honghao Fu and Zhiqi Shen and Jing Jih Chin and Hao Wang},
-    journal={arXiv preprint arXiv:2312.14871},
-    year={2023}
+@inproceedings{fu2025brainvis,
+  title={BrainVis: Exploring the bridge between brain and visual signals via image reconstruction},
+  author={Fu, Honghao and Wang, Hao and Chin, Jing Jih and Shen, Zhiqi},
+  booktitle={ICASSP 2025-2025 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)},
+  pages={1--5},
+  year={2025},
+  organization={IEEE}
 }
 ```
